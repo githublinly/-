@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>居中的五环</title>
+	<link rel="stylesheet" type="text/css" href="lesson.css"> 
+</head> 
+<body>
+	 <!--给一个大盒子外框-->
+    <div  class="box">
+    	<!--子盒子1放上面三个环-->
+        <div class="box1">
+            <div  class="circle color1"></div>
+            <div  class="circle color2"></div>
+            <div  class="circle color3"></div>
+        </div>
+       <!--子盒子2放下面两个环-->
+        <div class="box2">
+            <div  class="circle color4"></div>
+            <div  class="circle color5"></div>
+        </div>   
+    </div>
+    <br>1</br>
+    <br>2</br>
+    <br>3</br>
+    <br>4</br>
+    <br>5</br>
+    <br>6</br>
+    <br>7</br>
+    <br>8</br>
+    <br>9</br>
+    <br>10</br>
+     <br>1</br>
+    <br>2</br>
+    <br>3</br>
+    <br>4</br>
+    <br>5</br>
+    <br>6</br>
+    <br>7</br>
+    <br>8</br>
+    <br>9</br>
+    <br>10</br>
+     <br>1</br>
+    <br>2</br>
+    <br>3</br>
+    <br>4</br>
+    <br>5</br>
+    <br>6</br>
+    <br>7</br>
+    <br>8</br>
+    <br>9</br>
+    <br>10</br>
+
+</body>
+</html>
+
+/*给外面的盒子添加样式和fixed定位*/
+.box{
+	position: fixed;
+	left: 50%;
+	top :50%;
+	width: 300px;
+	height: 150px;
+	margin-left: -150px;
+	margin-top: -75px;
+	background-color:  lightskyblue;
+}
+
+/*给盒子1添加样式和relative定位*/
+.box1{
+	position: relative;
+	width: 300px;
+	height: 100px;
+	/*默认透明色*/
+	/*background-color:  transparent;*/
+}
+
+/*给盒子2添加样式和absolute定位*/
+.box2{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 200px;
+	height: 100px;
+}
+
+/*给五个将要设置成环的盒子统一设置CSS样式*/
+.circle{
+	float: left;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+ 
+ /*分别给五个环盒子添加边框和颜色，边框即圆环*/
+.color1{
+ 	border: 10px solid purple;
+}
+
+.color2{
+ 	border: 10px solid black;
+}
+
+.color3{
+	border: 10px solid red;
+}
+
+.color4{
+	border: 10px solid yellow;
+}
+
+.color5{
+	border: 10px solid green;
+}
+
